@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+
+body{
+    background-image: url(../image/bg.webp);
+}
+/* Header styling */
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #aa1818; /* Warna merah */
+    padding: 0 20px;
+    color: white;
+    justify-content: space-between;
+}
+
+select{
+    outline: none;
+    border-style: none;
+    border-radius: 2px;
+    padding: 3px 0;
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #aa1818;
+    transition: all .3s ease-out;
+    text-align: center;
+    border:1px solid #fff;
+}
+
+.bx-menu{
+    background-image: url(../image/bg.webp);
+    color: #aa1818;
+}
+
+/* Logo styling */
+.Slog {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Navigation styling */
+.nav {
+    display: flex;
+    gap: 10px; /* Jarak antar tombol */
+}
+
+/* Button styling */
+.nav-button {
+    background-color: white;
+    color: #aa1818;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #c7c7c783; /* Warna hover */
+}
+p{
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: #585858;
+}
