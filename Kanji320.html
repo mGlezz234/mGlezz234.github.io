@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=p, initial-scale=1.0">
+    <link rel="icon" href="/image/Logo1.png" type="png">
+    <title>JTranslate</title>
+    <link rel="stylesheet" href="/CSS/Kanji320.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-space">
+        <img src="/image/Logo.png" alt="" width="50px">
+        <div class="Slog">JTranslate</div>
+        </div>
+        <div>
+        <select class="bx-menu" id="menu" onchange="navigateToPage()">
+            <option value="Kanji320.html">Kanji 320</option>
+            <option value="Hiragana.html">Hiragana</option>
+            <option value="Katakana.html">Katakana</option>
+            <option value="index.html">menu</option>
+        </select>
+        </div>
+    </header>
+    <main>
+        <!-- PDF Container -->
+        <div class="pdf-container">
+            <iframe src="basic-kanji-320-main-book-a4-size_compress.pdf" width="100%" height="100%" frameborder="0">
+                This browser does not support PDFs. Please download the PDF to view it: 
+                <a href="file.pdf">Download PDF</a>.
+            </iframe>
+        </div>
+    </main>
+</body>
+<footer class="footer">
+    <p>&copy; 2024 JTranslate. All rights reserved.</p>
+    <p>🇮🇩どうも　ありがとうございます。🇯🇵</p>
+</footer>
+<script src="./JavaScript/language.js"></script>
+<script src="./JavaScript/main.js"></script>
+</html>
