@@ -21,15 +21,20 @@ body{
 .header img{
     padding: 5px;
     border-radius: 50%;
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.9);
+    border: 1px solid #fff;
+}
+
+.header img:hover{
+    background-color: #aa1818;
 }
 
 .header select{
     outline: none;
     border-style: none;
-    border-radius: 2px;
-    padding: 3px 0;
-    font-size: 17px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
     font-weight: 500;
     color: #fff;
     background-color: #aa1818;
@@ -49,6 +54,10 @@ body{
     text-align: end;
     font-weight: bold;
     display: flex-end;
+}
+.bx-menu:hover{
+    background-color: #fff;
+    color: #aa1818;
 }
 
 /* Logo styling */
@@ -82,7 +91,6 @@ body{
 }
 .logout-btn {
     background-color: #aa1818;
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
     color: white;
     padding: 10px 20px;
     border: none;
@@ -263,7 +271,8 @@ tr:hover {
     padding-bottom: 0   ;
     text-align: center;
     color: #aa1818;
-}.feedback-container {
+}
+.feedback-container {
     margin-top: 20px;
     text-align: center;
 }
@@ -279,7 +288,7 @@ tr:hover {
 }
 
 .feedback-container button {
-    background-color: #007bff;
+    background-color: #aa1818;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -288,12 +297,13 @@ tr:hover {
 }
 
 .feedback-container button:hover {
-    background-color: #0056b3;
+    background-color: #fff;
+    color: #aa1818;
 }
 
 .message {
     margin-top: 10px;
-    color: green;
+    color: #aa1818;
     font-size: 0.9em;
 }
 
