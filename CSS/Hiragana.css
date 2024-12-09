@@ -21,7 +21,7 @@ body{
 .header img{
     padding: 5px;
     border-radius: 50%;
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+    border: 1px solid #fff;
 }
 
 .header select{
@@ -82,24 +82,20 @@ body{
 }
 .Hiragana h2{
     text-align: center;
+    padding: 10px;
 }
-h2{
-    padding: 30px;
+.h2-p{
+    padding: 20px;
+}
+.h2-p h2{
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #000;
  }
-h3{
-    padding: 0 30px;
-    font-family: italic;
-}
-.Hiragana {
-    border-radius: 5px;
-    width: 70%;
-    margin: 50px auto;
-    background: #fff;
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
-    table-layout: auto;
-}
+
 p{
-    color: #aa1818;
+    color: #000;
+    padding-left: 20px;
 }
 
 .konten{
@@ -108,6 +104,32 @@ p{
     justify-content: center;
     align-items: center;
 }
+
+table th, table td {
+    font-weight: bold;
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 1rem;
+}
+
+table p{
+    color: #aa1818;
+}
+
+table th {
+    background-color: #f4f4f4;
+    color: #000;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
 /* Gaya dasar tabel */
 table {
     margin: 0% auto;
@@ -151,7 +173,7 @@ table td {
     }
 }
 .footer p{
-    padding-bottom: 0   ;
+    padding-top: 20px;
     text-align: center;
     color: #aa1818;
 }
