@@ -80,10 +80,10 @@ body{
 .nav-button:hover {
     background-color: #c7c7c783; /* Warna hover */
 }
-h2{
+.Katakana h2{
     text-align: center;
 }
-.Hiragana {
+.Katakana {
     border-radius: 5px;
     width: 70%;
     margin: 50px auto;
@@ -94,10 +94,16 @@ h2{
 p{
     color: #aa1818;
 }
-
+h2{
+    padding: 30px;
+ }
+h3{
+    padding: 0 30px;
+    font-family: italic;
+}
 .konten{
     background: #f5f5f5;
-    display: flex;
+    display: flex-box;
     justify-content: center;
     align-items: center;
 }
