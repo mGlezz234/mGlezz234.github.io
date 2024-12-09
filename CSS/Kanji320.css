@@ -125,10 +125,6 @@ table tr:nth-child(even) {
 table tr:hover {
     background-color: #f1f1f1;
 }
-/* Tabel */
-.table-container {
-    overflow-x: auto; /* Agar tabel dapat digulir pada layar kecil */
-}
 /* Responsif */
 @media (max-width: 768px) {
     h1, h2 {
