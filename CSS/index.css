@@ -261,6 +261,10 @@ th {
     background-color: #aa1818;
     color: white;
 }
+th:hover{
+    background-color: #fff;
+    color: #aa1818;
+}
 tr:nth-child(even) {
     background-color: #f9f9f9;
 }
@@ -306,4 +310,5 @@ tr:hover {
     color: #aa1818;
     font-size: 0.9em;
 }
+
 
