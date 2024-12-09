@@ -125,7 +125,36 @@ table tr:nth-child(even) {
 table tr:hover {
     background-color: #f1f1f1;
 }
+/* Tabel */
+.table-container {
+    overflow-x: auto; /* Agar tabel dapat digulir pada layar kecil */
+}
+/* Responsif */
+@media (max-width: 768px) {
+    h1, h2 {
+        font-size: 1.5rem;
+    }
 
+    body {
+        padding: 1rem;
+    }
+
+    table th, table td {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1, h2 {
+        font-size: 1.2rem;
+    }
+
+    table th, table td {
+        font-size: 0.8rem;
+        padding: 0.4rem;
+    }
+}
 footer {
     text-align: center;
     padding: 1rem;
