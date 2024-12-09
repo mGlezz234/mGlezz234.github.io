@@ -89,20 +89,6 @@ body{
 .nav-button:hover {
     background-color: #c7c7c783; /* Warna hover */
 }
-.logout-btn {
-    background-color: #aa1818;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.logout-btn:hover {
-    background-color: #fff;
-    color: #aa1818;
-}
 p{
     text-align: center;
     margin-top: 20px;
@@ -271,16 +257,13 @@ tr:nth-child(even) {
 tr:hover {
     background-color: #f1f1f1;
 }
-.footer p{
-    padding-bottom: 0   ;
-    text-align: center;
-    color: #aa1818;
-}
 .feedback-container {
     margin-top: 20px;
     text-align: center;
 }
-
+#feedbackfrom{
+    display: flexbox;
+}
 .feedback-container textarea {
     width: 90%;
     max-width: 500px;
@@ -310,5 +293,20 @@ tr:hover {
     color: #aa1818;
     font-size: 0.9em;
 }
+.logout-btn {
+    background-color: #aa1818;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
-
+.logout-btn:hover {
+    background-color: #fff;
+    color: #aa1818;
+}
+.footer p{
+    text-align: center;
+    color: #aa1818;
+}
