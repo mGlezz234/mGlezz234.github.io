@@ -1,70 +1,79 @@
-document.addEventListener('DOMContentLoaded', () => {
+// Kosongkan form saat halaman dimuat
+window.addEventListener('load', () => {
     const registerForm = document.getElementById('registerForm');
     const loginForm = document.getElementById('loginForm');
-    const logoutBtn = document.getElementById('logoutBtn');
+// Logika Register
+if (window.location.pathname.includes('register.html')) {
+    document.getElementById('registerForm').addEventListener('submit', function (event) {
+        event.preventDefault(); // Mencegah reload halaman
 
-    // Ambil data pengguna dari localStorage
-    const users = JSON.parse(localStorage.getItem('users')) || {};
+        // Ambil data dari form
+        const username = document.getElementById('regUsername').value;
+        const gmail = document.getElementById('regGmail').value;
+        const gender = document.getElementById('regGender').value;
+        const password = document.getElementById('regPassword').value;
 
-    // Proses Registrasi
-    if (registerForm) {
-        registerForm.addEventListener('submit', (e) => {
-            e.preventDefault();
+        // Simpan data ke localStorage (simulasi database sementara)
+        const userData = {
+            username,
+            gmail,
+            gender,
+            password // Simpan username dan password untuk login
+        };
 
-            const username = document.getElementById('regUsername').value;
-            const password = document.getElementById('regPassword').value;
+        localStorage.setItem('user', JSON.stringify(userData));
 
-            if (users[username]) {
-                alert('Username sudah terdaftar!');
-            } else {
-                users[username] = password;
-                localStorage.setItem('users', JSON.stringify(users)); // Simpan ke localStorage
-                alert('Registrasi berhasil! Silakan login.');
-                window.location.href = 'login.html'; // Redirect ke halaman login
-            }
-            
-        });
-    }
+        // Arahkan ke halaman login
+        alert('Registrasi berhasil! Silakan login.');
+        document.getElementById("registerForm").reset(); // Kosongkan form
+        window.location.href = 'login.html';
+    });
+}
 
-    // Proses Login
-    if (loginForm) {
-        loginForm.addEventListener('submit', (e) => {
-            e.preventDefault();
+// Logika Login
+if (window.location.pathname.includes('login.html')) {
+    document.getElementById('loginForm').addEventListener('submit', function (event) {
+        event.preventDefault(); // Mencegah reload halaman
 
-            const username = document.getElementById('username').value;
-            const password = document.getElementById('password').value;
+        // Ambil data login dari form
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
 
-            if (users[username] && users[username] === password) {
-                localStorage.setItem('isLoggedIn', 'true'); // Tandai user sebagai login
-                localStorage.setItem('currentUser', username); // Simpan username yang login
-                alert('Login berhasil!');
-                window.location.href = 'index.html'; // Redirect ke halaman utama
-            } else {
-                alert('Username atau password salah!');
-            }
-        });
-    }
+        // Ambil data user dari localStorage
+        const storedUser = JSON.parse(localStorage.getItem('user'));
 
-    // Cek Akses Halaman Index
-    if (window.location.pathname.includes('index.html')) {
-        const isLoggedIn = localStorage.getItem('isLoggedIn');
+        // Validasi username dan password
+        if (storedUser && storedUser.username === username && storedUser.password === password) {
+            // Tandai pengguna sebagai sudah login
+            localStorage.setItem('isLoggedIn', 'true');
 
-        if (isLoggedIn !== 'true') {
-            alert('Anda harus login terlebih dahulu!');
-            window.location.href = 'login.html'; // Redirect ke halaman login
+            alert('Login berhasil!');
+            window.location.href = 'index.html'; // Arahkan ke halaman index
         } else {
-            const currentUser = localStorage.getItem('currentUser');
-            alert(`Selamat datang, ${currentUser}!`);
+            alert('Username atau password salah!');
         }
-    }
+    });
+}
+});
 
-    // Logout
-    if (logoutBtn) {
-        logoutBtn.addEventListener('click', () => {
-            localStorage.removeItem('isLoggedIn');
-            localStorage.removeItem('currentUser');
-            alert('Anda telah logout.');
-            window.location.href = 'login.html'; // Redirect ke halaman login
-        });
+
+// Validasi akses halaman Index
+if (window.location.pathname.includes('index.html')) {
+    const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true'; // Pastikan membaca sebagai boolean
+    const storedUser = JSON.parse(localStorage.getItem('user'));
+
+    if (!storedUser) {
+        alert('Anda belum mendaftar. Silakan register terlebih dahulu.');
+        window.location.href = 'register.html';
+    } else if (!isLoggedIn) {
+        alert('Anda belum login. Silakan login terlebih dahulu.');
+        window.location.href = 'login.html';
     }
+}
+
+// Logout
+document.getElementById('logoutBtn')?.addEventListener('click', () => {
+    localStorage.setItem('isLoggedIn', 'false');
+    alert('Anda telah logout.');
+    window.location.href = 'login.html'; // Redirect ke halaman login
 });
