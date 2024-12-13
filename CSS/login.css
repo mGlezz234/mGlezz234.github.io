@@ -24,7 +24,7 @@ body {
     text-align: center;
 }
 .image img {
-    width: 150px; /* Adjust image size */
+    width: 150px;
     height: auto;
 }
 h2 {
@@ -40,7 +40,9 @@ label {
     display: block;
     margin-bottom: 5px;
 }
-
+.Jenis-kelamin {
+    text-align: left;
+}
 input {
     width: 100%;
     padding: 10px;
@@ -60,7 +62,7 @@ button {
 }
 
 button:hover {
-    background-color: #red;
+    background-color: red;
 }
 
 .message {
