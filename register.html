@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - JTranslate</title>
+    <link rel="icon" href="image/Logo1.png" type="png">
+    <link rel="stylesheet" href="CSS/login.css">
+</head>
+
+<body class="container">
+    <img src="image/TopengJpn.png" alt="Topeng Jepang" width="300px">
+    <div class="auth-container">
+        <h2>Register</h2>
+        <form action="/submit-register" method="POST" id="registerForm" name="submit-to-google-sheet">
+            <div class="form-group">
+                <label for="regUsername">Username:</label>
+                <input type="text" id="regUsername" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="regGmail">Gmail:</label>
+                <input type="email" id="regGmail" name="gmail" required>
+            </div>
+            <div class="Jenis-kelamin">
+                <label for="regGender">Jenis Kelamin:</label>
+                <input type="text" name="gender">
+
+            </div>
+            <div class="form-group">
+                <label for="regPassword">Password:</label>
+                <input type="password" id="regPassword" name="password" pattern="(?=.*\d)(?=.*[a-zA-Z]).{6,}" required>
+                <small>Password harus mengandung huruf dan angka, minimal 6 karakter.</small>
+            </div>
+
+            <button type="submit" value="login.html">Register</button>
+        </form>
+        <p>Sudah punya akun? <a href="login.html">Login di sini</a></p>
+        <p id="registerMessage" class="message"></p>
+    </div>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw-VIFoPDc6kkTylZwa__mWuana8e5rbQTiktkvqS3HrVYWeX9GtLXEZNnX2QBXGi0w/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+    <script src="JavaScript/accountsFeedback.js"></script>
+</body>
+
+</html>

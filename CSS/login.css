@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #aa1818;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.auth-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: start;
+}
+
+.image img {
+    width: 150px;
+    height: auto;
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #aa1818;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: red;
+}
+
+.message {
+    color: red;
+    font-size: 0.9em;
+}
+
+@media (max-width: 576px) {
+    body {
+        flex-direction: column;
+    }
+
+    .container {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .auth-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .form-group {
+        margin-bottom: 10px;
+    }
+
+    input,
+    select,
+    button {
+        padding: 8px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .auth-container {
+        width: 80%;
+    }
+
+    h2 {
+        font-size: 1.75em;
+    }
+
+    .form-group {
+        margin-bottom: 12px;
+    }
+
+    input,
+    select,
+    button {
+        padding: 9px;
+    }
+}
+
+@media (min-width: 769px) {
+    .auth-container {
+        width: 300px;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    input,
+    select,
+    button {
+        padding: 10px;
+    }
+}
