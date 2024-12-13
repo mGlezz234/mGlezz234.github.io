@@ -105,6 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
             localStorage.removeItem('isLoggedIn');
             localStorage.removeItem('currentUser');
             alert('Anda telah logout.');
+            window.location.href = 'login.html';
         });
     }
 });
