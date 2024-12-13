@@ -12,9 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     text-align: center;
-    width: 100%;
 }
 
 .auth-container {
@@ -22,30 +20,20 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width: 300px;
+    text-align: center;
 }
-
-.image {
-    margin-bottom: 20px;
-}
-
 .image img {
-    width: 150px;
+    width: 150px; /* Adjust image size */
     height: auto;
 }
-
 h2 {
     margin-bottom: 20px;
 }
 
 .form-group {
     margin-bottom: 15px;
-    width: 100%;
+    text-align: left;
 }
 
 label {
@@ -53,8 +41,7 @@ label {
     margin-bottom: 5px;
 }
 
-input,
-select {
+input {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
@@ -65,7 +52,7 @@ select {
 button {
     width: 100%;
     padding: 10px;
-    background-color: #aa1818;
+    background-color: #007bff;
     color: white;
     border: none;
     border-radius: 5px;
@@ -73,75 +60,10 @@ button {
 }
 
 button:hover {
-    background-color: red;
+    background-color: #0056b3;
 }
 
 .message {
     color: red;
     font-size: 0.9em;
-}
-
-@media (max-width: 576px) {
-    .container {
-        padding: 20px;
-    }
-
-    .auth-container {
-        width: 100%;
-        padding: 15px;
-    }
-
-    h2 {
-        font-size: 1.5em;
-    }
-
-    .form-group {
-        margin-bottom: 10px;
-    }
-
-    input,
-    select,
-    button {
-        padding: 8px;
-    }
-}
-
-@media (min-width: 577px) and (max-width: 768px) {
-    .auth-container {
-        width: 80%;
-    }
-
-    h2 {
-        font-size: 1.75em;
-    }
-
-    .form-group {
-        margin-bottom: 12px;
-    }
-
-    input,
-    select,
-    button {
-        padding: 9px;
-    }
-}
-
-@media (min-width: 769px) {
-    .auth-container {
-        width: 300px;
-    }
-
-    h2 {
-        font-size: 2em;
-    }
-
-    .form-group {
-        margin-bottom: 15px;
-    }
-
-    input,
-    select,
-    button {
-        padding: 10px;
-    }
 }
