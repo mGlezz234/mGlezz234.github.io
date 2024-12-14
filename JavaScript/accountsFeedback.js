@@ -65,7 +65,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // Fungsi untuk redirect ke login jika belum login
     const redirectToLoginIfNotLoggedIn = () => {
         const isLoggedIn = localStorage.getItem('isLoggedIn');
-        if (window.location.hostname === 'jtranslate.my.id' && isLoggedIn !== 'true') {
+        const currentPath = window.location.pathname;
+
+        // Pastikan hanya redirect jika bukan sudah di halaman login
+        if (window.location.hostname === 'jtranslate.my.id' && isLoggedIn !== 'true' && !currentPath.includes('login.html')) {
             window.location.href = 'login.html';
         }
     };
