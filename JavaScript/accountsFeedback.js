@@ -90,17 +90,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-    if (window.location.pathname.includes('mainContent.html')) {
-        const isLoggedIn = localStorage.getItem('isLoggedIn');
-
-        if (isLoggedIn !== 'true') {
-            alert('Anda harus login terlebih dahulu!');
-            window.location.href = 'index.html';
-        } else {
-            const currentUser = localStorage.getItem('currentUser');
-            alert(`Selamat datang, ${currentUser}!`);
-        }
-    }
     if (logoutBtn) {
         logoutBtn.addEventListener('click', () => {
             localStorage.removeItem('isLoggedIn');
