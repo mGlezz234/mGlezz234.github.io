@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const feedbackListContainer = document.getElementById('feedbackList');
     const totalAccountsContainer = document.getElementById('totalAccounts');
     const totalFeedbacksContainer = document.getElementById('totalFeedbacks');
+    const deleteAllButton = document.getElementById('deleteAllButton'); // Tambahkan deklarasi deleteAllButton
 
     const users = JSON.parse(localStorage.getItem('users')) || {};
     const feedbacks = JSON.parse(localStorage.getItem('feedbacks')) || [];
@@ -49,6 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
 document.addEventListener('DOMContentLoaded', () => {
     const registerForm = document.getElementById('registerForm');
     const loginForm = document.getElementById('loginForm');
@@ -69,7 +71,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 alert('Registrasi berhasil! Silakan login.');
                 window.location.href = 'index.html';
             }
-
         });
     }
     if (loginForm) {
@@ -89,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-    if (window.location.pathname.includes('mainConten.html')) {
+    if (window.location.pathname.includes('mainContent.html')) {
         const isLoggedIn = localStorage.getItem('isLoggedIn');
 
         if (isLoggedIn !== 'true') {
@@ -105,6 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
             localStorage.removeItem('isLoggedIn');
             localStorage.removeItem('currentUser');
             alert('Anda telah logout.');
+            window.location.href = 'index.html';
         });
     }
 });
