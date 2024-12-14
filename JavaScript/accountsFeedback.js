@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-    if (window.location.pathname.includes('index.html')) {
+    if (window.location.pathname.includes('jtranslate.my.id')) {
         const isLoggedIn = localStorage.getItem('isLoggedIn');
 
         if (isLoggedIn !== 'true') {
