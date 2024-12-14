@@ -3,21 +3,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const feedbackListContainer = document.getElementById('feedbackList');
     const totalAccountsContainer = document.getElementById('totalAccounts');
     const totalFeedbacksContainer = document.getElementById('totalFeedbacks');
-    const deleteAllButton = document.getElementById('deleteAllButton');
 
     const users = JSON.parse(localStorage.getItem('users')) || {};
     const feedbacks = JSON.parse(localStorage.getItem('feedbacks')) || [];
     const totalAccounts = Object.keys(users).length;
     const totalFeedbacks = feedbacks.length;
-
     if (totalAccountsContainer) {
         totalAccountsContainer.textContent = totalAccounts;
     }
-
     if (totalFeedbacksContainer) {
         totalFeedbacksContainer.textContent = totalFeedbacks;
     }
-
     if (registeredAccountsContainer) {
         if (totalAccounts === 0) {
             registeredAccountsContainer.textContent = 'Belum ada akun yang terdaftar.';
@@ -29,7 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 '</ul>';
         }
     }
-
     if (feedbackListContainer) {
         if (totalFeedbacks === 0) {
             feedbackListContainer.textContent = 'Belum ada feedback yang diberikan.';
@@ -42,7 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 '</ul>';
         }
     }
-
     if (deleteAllButton) {
         deleteAllButton.addEventListener('click', () => {
             const confirmDelete = confirm('Apakah Anda yakin ingin menghapus semua akun dan feedback?');
@@ -55,26 +49,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
-
 document.addEventListener('DOMContentLoaded', () => {
     const registerForm = document.getElementById('registerForm');
     const loginForm = document.getElementById('loginForm');
     const logoutBtn = document.getElementById('logoutBtn');
     const users = JSON.parse(localStorage.getItem('users')) || {};
-
-    // Fungsi untuk redirect ke login jika belum login
-    const redirectToLoginIfNotLoggedIn = () => {
-        const isLoggedIn = localStorage.getItem('isLoggedIn');
-        const currentPath = window.location.pathname;
-
-        // Pastikan hanya redirect jika bukan sudah di halaman login
-        if (window.location.hostname === 'jtranslate.my.id' && isLoggedIn !== 'true' && !currentPath.includes('login.html')) {
-            window.location.href = 'login.html';
-        }
-    };
-
-    redirectToLoginIfNotLoggedIn();
-
     if (registerForm) {
         registerForm.addEventListener('submit', (e) => {
             e.preventDefault();
@@ -90,9 +69,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 alert('Registrasi berhasil! Silakan login.');
                 window.location.href = 'login.html';
             }
+
         });
     }
-
     if (loginForm) {
         loginForm.addEventListener('submit', (e) => {
             e.preventDefault();
@@ -110,7 +89,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-
     if (window.location.pathname.includes('index.html')) {
         const isLoggedIn = localStorage.getItem('isLoggedIn');
 
@@ -122,13 +100,11 @@ document.addEventListener('DOMContentLoaded', () => {
             alert(`Selamat datang, ${currentUser}!`);
         }
     }
-
     if (logoutBtn) {
         logoutBtn.addEventListener('click', () => {
             localStorage.removeItem('isLoggedIn');
             localStorage.removeItem('currentUser');
             alert('Anda telah logout.');
-            window.location.href = 'login.html';
         });
     }
 });
