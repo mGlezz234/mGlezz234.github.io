@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const feedbackListContainer = document.getElementById('feedbackList');
     const totalAccountsContainer = document.getElementById('totalAccounts');
     const totalFeedbacksContainer = document.getElementById('totalFeedbacks');
-    const deleteAllButton = document.getElementById('deleteAllButton'); // Tambahkan deklarasi deleteAllButton
+    const deleteAllButton = document.getElementById('deleteAllButton');
 
     const users = JSON.parse(localStorage.getItem('users')) || {};
     const feedbacks = JSON.parse(localStorage.getItem('feedbacks')) || [];
@@ -89,6 +89,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 alert('Username atau password salah!');
             }
         });
+    }
+    if (window.location.pathname.includes('mainContent.html')) {
+        const isLoggedIn = localStorage.getItem('isLoggedIn');
+
+        if (isLoggedIn !== 'true') {
+            alert('Anda harus login terlebih dahulu!');
+            window.location.href = 'index.html';
+        } else {
+            const currentUser = localStorage.getItem('currentUser');
+            alert(`Selamat datang, ${currentUser}!`);
+        }
     }
     if (logoutBtn) {
         logoutBtn.addEventListener('click', () => {
