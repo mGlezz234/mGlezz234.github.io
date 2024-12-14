@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 users[username] = password;
                 localStorage.setItem('users', JSON.stringify(users));
                 alert('Registrasi berhasil! Silakan login.');
-                window.location.href = 'login.html';
+                window.location.href = 'index.html';
             }
 
         });
@@ -83,18 +83,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 localStorage.setItem('isLoggedIn', 'true');
                 localStorage.setItem('currentUser', username);
                 alert('Login berhasil!');
-                window.location.href = 'index.html';
+                window.location.href = 'mainContent.html';
             } else {
                 alert('Username atau password salah!');
             }
         });
     }
-    if (window.location.pathname.includes('index.html')) {
+    if (window.location.pathname.includes('mainConten.html')) {
         const isLoggedIn = localStorage.getItem('isLoggedIn');
 
         if (isLoggedIn !== 'true') {
             alert('Anda harus login terlebih dahulu!');
-            window.location.href = 'login.html';
+            window.location.href = 'index.html';
         } else {
             const currentUser = localStorage.getItem('currentUser');
             alert(`Selamat datang, ${currentUser}!`);
