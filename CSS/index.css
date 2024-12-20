@@ -118,15 +118,12 @@ body{
     margin-top: 10px;
 }
 
-
-/* Navigation styling */
 .nav {
     display: flex;
-    gap: 10px; /* Jarak antar tombol */
+    gap: 10px;
 }
 
-/* Button styling */
-.nav-button {
+nav-button {
     background-color: white;
     color: #aa1818;
     border: none;
@@ -314,27 +311,13 @@ tr:hover {
     gap: 10px;
     width: 100%;
 }
-.logout-btn {
-    background-color: #aa1818;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 23px;
-    font: bolder;
-    cursor: pointer;
-    width: 50%;
-}
-
-.logout-btn:hover {
-    background-color: red;
-}
 h2{
     background: #aa1818;
     color: #fff;
     border-radius: 5px;
     text-align: center;
     padding: 10px;
-    width: 50%;
+    width: 80%;
 }
 h2:hover{
     background-color: red;
