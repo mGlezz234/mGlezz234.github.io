@@ -233,7 +233,7 @@ body.dark-mode {
 .sidebar.dark-mode {
     background-color: #1e1e1e;
 }
-.dark-mode h3, h4, h2{
+.dark-mode h2 {
     color: #fff;
 }
 .dark-mode .pdf-container{
