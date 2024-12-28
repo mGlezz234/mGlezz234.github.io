@@ -376,7 +376,10 @@ body.dark-mode {
 .sidebar.dark-mode {
     background-color: #1e1e1e;
 }
-.dark-mode h3, h4{
+.dark-mode h3 {
+    color: #fff;
+}
+.dark-mode h4 {
     color: #fff;
 }
 .dark-mode label{
