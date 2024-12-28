@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=p, initial-scale=1.0">
+    <link rel="icon" href="image/Logo1.png" type="png">
+    <title>JTranslate</title>
+    <link rel="stylesheet" href="CSS/Minna1.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="header-space">
+            <img src="image/Logo.png" alt="" width="50px">
+            <h2>JTranslate</h2>
+        </div>
+        <div class="span">
+            <div>
+                <span style="float: right;">
+                    <a onclick="toggleDarkMode()">
+                        <i id="theme-icon" class="bx bx-sun" style="font-size: 30px;"></i>
+                    </a>
+                </span>
+            </div>
+            <div class="menu-header" onclick="toggleSidebar()">
+                <span class="bx bx-menu" style="font-size: 30px;"></span>
+            </div>
+        </div>
+    </header>
+    
+    <div class="sidebar" id="sidebar">
+        <ul class="menu-list">
+            <li><a onclick="closeSidebar()"><i class="bx bx-x"></i> close</a></li>
+            <li><a href="index.html" onclick="closeSidebar()"><i class="bx bx-home"></i> Home</a></li>
+            <li><a href="Hiragana.html" onclick="closeSidebar()"><i class="bx bx-book"></i> Hiragana</a></li>
+            <li><a href="Katakana.html" onclick="closeSidebar()"><i class="bx bx-book"></i> Katakana</a></li>
+            <li><a href="Kanji320.html" onclick="closeSidebar()"><i class="bx bx-book"></i> Kanji320</a></li>
+            <li><a href="Minna1.html" onclick="closeSidebar()"><i class="bx bx-book"></i> Minna 1</a></li>
+        </ul>
+    </div>
+    <main>
+    
+        <div class="dropdown">
+            <button onclick="toggleDropdown('bab1')">Bab 1: Perkenalan (Introductions)</button>
+            <div id="bab1" class="dropdown-content">
+                <p><strong>Materi:</strong></p>
+                <p>Bab ini memperkenalkan frasa dasar untuk memperkenalkan diri, menyapa, dan menyatakan profesi. Anda juga belajar tentang penggunaan kata ganti orang dan partikel "は".</p>
+    
+                <p><strong>Contoh:</strong></p>
+                <ul>
+                    <li>わたしは アリです。 (Watashi wa Ari desu.) - Saya Ari.</li>
+                    <li>わたしは 学生です。 (Watashi wa gakusei desu.) - Saya seorang pelajar.</li>
+                    <li>はじめまして。 (Hajimemashite.) - Senang bertemu dengan Anda.</li>
+                    <li>どうぞ よろしく。 (Douzo yoroshiku.) - Mohon kerjasamanya.</li>
+                </ul>
+    
+                <p><strong>Keterangan Tambahan:</strong> Partikel "は" menandakan topik dalam kalimat.</p>
+            </div>
+        </div>
+    
+        <div class="dropdown">
+            <button onclick="toggleDropdown('bab2')">Bab 2: Barang dan Tempat</button>
+            <div id="bab2" class="dropdown-content">
+                <p><strong>Materi:</strong></p>
+                <p>Bab ini memperkenalkan kata benda, frasa untuk menunjukkan barang, dan lokasi. Anda juga belajar partikel "これ", "それ", "あれ", dan "の" untuk kepemilikan.</p>
+    
+                <p><strong>Contoh:</strong></p>
+                <ul>
+                    <li>これは ほんです。 (Kore wa hon desu.) - Ini adalah buku.</li>
+                    <li>それは なんですか？ (Sore wa nan desu ka?) - Itu apa?</li>
+                    <li>あれは わたしの かばんです。 (Are wa watashi no kaban desu.) - Itu adalah tas saya.</li>
+                    <li>この とけいは いくらですか？ (Kono tokei wa ikura desu ka?) - Berapa harga jam ini?</li>
+                </ul>
+    
+                <p><strong>Keterangan Tambahan:</strong> Gunakan "これ", "それ", dan "あれ" untuk menunjukkan benda berdasarkan jaraknya dari pembicara.</p>
+            </div>
+        </div>
+    
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 JTranslate. All rights reserved.</p>
+    </footer>
+    <script src="JavaScript/language.js"></script>
+    <script src="JavaScript/main.js"></script>
+</body>
+
+</html>
