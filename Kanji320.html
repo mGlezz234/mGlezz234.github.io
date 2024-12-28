@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=p, initial-scale=1.0">
+    <link rel="icon" href="image/Logo1.png" type="png">
+    <title>JTranslate</title>
+    <link rel="stylesheet" href="CSS/Kanji320.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="header-space">
+            <img src="image/Logo.png" alt="" width="50px">
+            <h2>JTranslate</h2>
+        </div>
+        <div class="span">
+            <div>
+                <span style="float: right;">
+                    <a onclick="toggleDarkMode()">
+                        <i id="theme-icon" class="bx bx-sun" style="font-size: 30px;"></i>
+                    </a>
+                </span>
+            </div>
+            <div class="menu-header" onclick="toggleSidebar()">
+                <span class="bx bx-menu" style="font-size: 30px;"></span>
+            </div>
+        </div>
+    </header>
+    
+    <div class="sidebar" id="sidebar">
+        <ul class="menu-list">
+            <li><a onclick="toggleDarkMode()"><i class="bx bx-toggle-left toggle-icon-left"></i> Dark Mode</a></li>
+            <li><a onclick="closeSidebar()"><i class="bx bx-x"></i> close</a></li>
+            <li><a href="index.html" onclick="closeSidebar()"><i class="bx bx-home"></i> Home</a></li>
+            <li><a href="Hiragana.html" onclick="closeSidebar()"><i class="bx bx-book"></i> Hiragana</a></li>
+            <li><a href="Katakana.html" onclick="closeSidebar()"><i class="bx bx-book"></i> Katakana</a></li>
+            <li><a href="Kanji320.html" onclick="closeSidebar()"><i class="bx bx-book"></i> Kanji320</a></li>
+            <li><a href="Minna1.html" onclick="closeSidebar()"><i class="bx bx-book"></i> Minna 1</a></li>
+        </ul>
+    </div>
+    <main>
+        <section class="dropdown">
+            <div class="dropdown-header" onclick="toggleContent(this)">↓ Apa itu Kanji?</div>
+            <div class="dropdown-content" id="kanji-dropdown">
+                <p>
+                    Kanji adalah karakter yang diadaptasi dari sistem tulisan Tiongkok dan digunakan dalam bahasa Jepang
+                    untuk merepresentasikan kata atau konsep tertentu. Setiap kanji memiliki makna dan cara baca yang
+                    unik.
+                </p>
+                <h2>Contoh Kanji dan Maknanya</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Kanji</th>
+                            <th>Bacaan On'yomi</th>
+                            <th>Bacaan Kun'yomi</th>
+                            <th>Arti</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>日</td>
+                            <td>ニチ (nichi)</td>
+                            <td>ひ (hi)</td>
+                            <td>Hari/Matahari</td>
+                        </tr>
+                        <tr>
+                            <td>水</td>
+                            <td>スイ (sui)</td>
+                            <td>みず (mizu)</td>
+                            <td>Air</td>
+                        </tr>
+                        <tr>
+                            <td>火</td>
+                            <td>カ (ka)</td>
+                            <td>ひ (hi)</td>
+                            <td>Api</td>
+                        </tr>
+                        <tr>
+                            <td>人</td>
+                            <td>ジン (jin)</td>
+                            <td>ひと (hito)</td>
+                            <td>Orang</td>
+                        </tr>
+                        <tr>
+                            <td>学</td>
+                            <td>ガク (gaku)</td>
+                            <td>まなぶ (manabu)</td>
+                            <td>Belajar</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <div class="pdf-container">
+        <P>Untuk lebih lengkap nya download Kanji320 dibawah ini. 😊</p>
+        <iframe src="basic-kanji-320-main-book-a4-size_compress.pdf" width="100%" height="100%" frameborder="0">
+            This browser does not support PDFs. Please download the PDF to view it:
+            <a href="basic-kanji-320-main-book-a4-size_compress.pdf">Download PDF</a>.
+        </iframe>
+    </div>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 JTranslate. All rights reserved.</p>
+    </footer>
+    <script src="JavaScript/language.js"></script>
+    <script src="JavaScript/main.js"></script>
+</body>
+
+</html>

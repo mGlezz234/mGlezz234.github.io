@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=p, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/Logo1.png" type="png">
+    <title>JTranslate</title>
+    <link rel="stylesheet" href="CSS/Katakana.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="header-space">
+            <img src="image/Logo.png" alt="" width="50px">
+            <h2>JTranslate</h2>
+        </div>
+        <div class="span">
+            <div>
+                <span style="float: right;">
+                    <a onclick="toggleDarkMode()">
+                        <i id="theme-icon" class="bx bx-sun" style="font-size: 30px;"></i>
+                    </a>
+                </span>
+            </div>
+            <div class="menu-header" onclick="toggleSidebar()">
+                <span class="bx bx-menu" style="font-size: 30px;"></span>
+            </div>
+        </div>
+    </header>
+    
+    <div class="sidebar" id="sidebar">
+        <ul class="menu-list">
+            <li><a onclick="toggleDarkMode()"><i class="bx bx-toggle-left toggle-icon-left"></i> Dark Mode</a></li>
+            <li><a onclick="closeSidebar()"><i class="bx bx-x"></i> close</a></li>
+            <li><a href="index.html" onclick="closeSidebar()"><i class="bx bx-home"></i> Home</a></li>
+            <li><a href="Hiragana.html" onclick="closeSidebar()"><i class="bx bx-book"></i> Hiragana</a></li>
+            <li><a href="Katakana.html" onclick="closeSidebar()"><i class="bx bx-book"></i> Katakana</a></li>
+            <li><a href="Kanji320.html" onclick="closeSidebar()"><i class="bx bx-book"></i> Kanji320</a></li>  
+            <li><a href="Minna1.html" onclick="closeSidebar()"><i class="bx bx-book"></i> Minna 1</a></li>      
+        </ul>
+    </div>
+    <main class="konten">
+        <div class="dropdown">
+            <h2 onclick="toggleContent(this)">↓ Katakana Dasar</h2>
+            <div class="dropdown-content">
+                <p>
+                    Katakana juga terdiri dari 46 karakter dasar, mirip dengan hiragana, tetapi dengan bentuk yang lebih
+                    kaku dan geometris. Contoh:
+                </p>
+                <div class="Katakana">
+                    <h2>KATAKANA</h2>
+                    <table>
+                        <tr>
+                            <td>ア<p>a</p>
+                            </td>
+                            <td>イ<p>i</p>
+                            </td>
+                            <td>ウ<p>u</p>
+                            </td>
+                            <td>エ<p>e</p>
+                            </td>
+                            <td>オ<p>o</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>カ<p>ka</p>
+                            </td>
+                            <td>キ<p>ki</p>
+                            </td>
+                            <td>ク<p>ku</p>
+                            </td>
+                            <td>ケ<p>ke</p>
+                            </td>
+                            <td>コ<p>ko</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>サ<p>sa</p>
+                            </td>
+                            <td>シ<p>shi</p>
+                            </td>
+                            <td>ス<p>su</p>
+                            </td>
+                            <td>セ<p>se</p>
+                            </td>
+                            <td>ソ<p>so</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>タ<p>ta</p>
+                            </td>
+                            <td>チ<p>chi</p>
+                            </td>
+                            <td>ツ<p>tsu</p>
+                            </td>
+                            <td>テ<p>te</p>
+                            </td>
+                            <td>ト<p>to</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ナ<p>na</p>
+                            </td>
+                            <td>ニ<p>ni</p>
+                            </td>
+                            <td>ヌ<p>nu</p>
+                            </td>
+                            <td>ネ<p>ne</p>
+                            </td>
+                            <td>ノ<p>no</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ハ<p>ha</p>
+                            </td>
+                            <td>ヒ<p>hi</p>
+                            </td>
+                            <td>フ<p>fu</p>
+                            </td>
+                            <td>ヘ<p>he</p>
+                            </td>
+                            <td>ホ<p>ho</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>マ<p>ma</p>
+                            </td>
+                            <td>ミ<p>mi</p>
+                            </td>
+                            <td>ム<p>mu</p>
+                            </td>
+                            <td>メ<p>me</p>
+                            </td>
+                            <td>モ<p>mo</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ヤ<p>ya</p>
+                            </td>
+                            <td></td>
+                            <td>ユ<p>yu</p>
+                            </td>
+                            <td></td>
+                            <td>ヨ<p>yo</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ラ<p>ra</p>
+                            </td>
+                            <td>リ<p>ri</p>
+                            </td>
+                            <td>ル<p>ru</p>
+                            </td>
+                            <td>レ<p>re</p>
+                            </td>
+                            <td>ロ<p>ro</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ワ<p>wa</p>
+                            </td>
+                            <td></td>
+                            <td>ン<p>n</p>
+                            </td>
+                            <td></td>
+                            <td>ヲ<p>wo</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <h2 onclick="toggleContent(this)">↓ Tenten (゛)</h2>
+            <div class="dropdown-content">
+                <p>
+                    Tenten (゛) digunakan untuk mengubah bunyi konsonan, menjadi lebih tebal di baca nya:
+                </p>
+                <div class="Katakana">
+                    <h2>Katakana tenten (゛)</h2>
+                    <table>
+                        <tr>
+                            <td>ガ<p>ga</p>
+                            </td>
+                            <td>ギ<p>gi</p>
+                            </td>
+                            <td>グ<p>gu</p>
+                            </td>
+                            <td>ゲ<p>ge</p>
+                            </td>
+                            <td>ゴ<p>go</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ザ<p>za</p>
+                            </td>
+                            <td>ジ<p>ji</p>
+                            </td>
+                            <td>ズ<p>zu</p>
+                            </td>
+                            <td>ゼ<p>ze</p>
+                            </td>
+                            <td>ゾ<p>zo</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ダ<p>da</p>
+                            </td>
+                            <td>ヂ<p>ji</p>
+                            </td>
+                            <td>ヅ<p>zu</p>
+                            </td>
+                            <td>デ<p>de</p>
+                            </td>
+                            <td>ド<p>do</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>バ<p>ba</p>
+                            </td>
+                            <td>ビ<p>bi</p>
+                            </td>
+                            <td>ブ<p>bu</p>
+                            </td>
+                            <td>ベ<p>be</p>
+                            </td>
+                            <td>ボ<p>bo</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <h2 onclick="toggleContent(this)">↓ Maru (゜)</h2>
+            <div class="dropdown-content">
+                <p>
+                    Maru (゜) digunakan pada kelompok huruf h untuk mengubah bunyinya menjadi p:
+                </p>
+                <div class="Katakana">
+                    <h2>KATAKANA MARU (゜)</h2>
+                    <table>
+                        <tr>
+                            <td>パ<p>pa</p>
+                            </td>
+                            <td>ピ<p>pi</p>
+                            </td>
+                            <td>プ<p>pu</p>
+                            </td>
+                            <td>ペ<p>pe</p>
+                            </td>
+                            <td>ポ<p>po</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <h2 onclick="toggleContent(this)">↓ + huruf semi konsonan</h2>
+            <div class="dropdown-content">
+                <div class="Katakana">
+                    <h2>KATAKAN + HURUF KECIL</h2>
+                    <table>
+                        <tr>
+                            <td>キャ<p>kya</p>
+                            </td>
+                            <td>キュ<p>kyu</p>
+                            </td>
+                            <td>キョ<p>kyo</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>シャ<p>sha</p>
+                            </td>
+                            <td>シュ<p>shu</p>
+                            </td>
+                            <td>ショ<p>sho</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>チャ<p>cha</p>
+                            </td>
+                            <td>チュ<p>chu</p>
+                            </td>
+                            <td>チョ<p>cho</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ニャ<p>nya</p>
+                            </td>
+                            <td>ニュ<p>nyu</p>
+                            </td>
+                            <td>ニョ<p>nyo</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ヒャ<p>hya</p>
+                            </td>
+                            <td>ヒュ<p>hyu</p>
+                            </td>
+                            <td>ヒョ<p>hyo</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ミャ<p>mya</p>
+                            </td>
+                            <td>ミュ<p>myu</p>
+                            </td>
+                            <td>ミョ<p>myo</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>リャ<p>rya</p>
+                            </td>
+                            <td>リュ<p>ryu</p>
+                            </td>
+                            <td>リョ<p>ryo</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ギャ<p>gya</p>
+                            </td>
+                            <td>ギュ<p>gyu</p>
+                            </td>
+                            <td>ギョ<p>gyo</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ジャ<p>ja</p>
+                            </td>
+                            <td>ジュ<p>ju</p>
+                            </td>
+                            <td>ジョ<p>jo</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ビャ<p>bya</p>
+                            </td>
+                            <td>ビュ<p>byu</p>
+                            </td>
+                            <td>ビョ<p>byo</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ピャ<p>pya</p>
+                            </td>
+                            <td>ピュ<p>pyu</p>
+                            </td>
+                            <td>ピョ<p>pyo</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 JTranslate. All rights reserved.</p>
+    </footer>
+    <script src="JavaScript/language.js"></script>
+    <script src="JavaScript/main.js"></script>
+    
+    
+</body>
+</html>

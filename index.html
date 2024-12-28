@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JTranslate</title>
+    <link rel="icon" href="image/Logo1.png" type="png">
+    <link rel="stylesheet" href="CSS/index.css">
+    
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="header-space">
+            <img src="image/Logo.png" alt="" width="50px">
+            <h2>JTranslate</h2>
+        </div>
+        <div class="span">
+            <div>
+                <span style="float: right;">
+                    <a onclick="toggleDarkMode()">
+                        <i id="theme-icon" class="bx bx-sun" style="font-size: 30px;"></i>
+                    </a>
+                </span>
+            </div>
+            <div class="menu-header" onclick="toggleSidebar()">
+                <span class="bx bx-menu" style="font-size: 30px;"></span>
+            </div>
+        </div>
+    </header>
+    
+    <div class="sidebar" id="sidebar">
+        <ul class="menu-list">
+            <li><a onclick="closeSidebar()"><i class="bx bx-x"></i> close</a></li>
+            <li><a href="index.html" onclick="closeSidebar()"><i class="bx bx-home"></i> Home</a></li>
+            <li><a href="Hiragana.html" onclick="closeSidebar()"><i class="bx bx-book"></i> Hiragana</a></li>
+            <li><a href="Katakana.html" onclick="closeSidebar()"><i class="bx bx-book"></i> Katakana</a></li>
+            <li><a href="Kanji320.html" onclick="closeSidebar()"><i class="bx bx-book"></i> Kanji320</a></li>
+            <li><a href="Minna1.html" onclick="closeSidebar()"><i class="bx bx-book"></i> Minna 1</a></li>
+        </ul>
+    </div>
+    
+    <main class="konten">
+        <img src="image/TopengJpn.png" class="atas" width="300px">
+        <div class="container">
+            <div class="translator_property" id="translator_property">
+                <ul class="nuv_item">
+                    <li>
+                        <select class="select">
+
+                        </select>
+                    </li>
+                    <li class="bx bx-transfer"></li>
+                    <li>
+                        <select class="select">
+                        </select>
+                    </li>
+                </ul>
+                <div class="write_box">
+                    <div class="Property_form">
+                        <textarea maxlength="5000" class="fromText" placeholder="Tuliskan..."></textarea>
+                        <div class="icons">
+                            <span class="bx bx-volume-full from"></span>
+                            <div class="code_length">0/500</div>
+                        </div>
+                    </div>
+                    <div class="Property_trans">
+                        <textarea class="toTranslate" disabled></textarea>
+                        <div class="icons">
+                            <span class="bx bx-volume-full to"></span>
+                            <span class="bx bx-copy"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <h3>* Ucapan Sehari-hari dalam Bahasa Jepang</h3>
+    <table>
+        <tr>
+            <th>Ucapan dalam Bahasa Jepang</th>
+            <th>Romanisasi</th>
+            <th>Artinya</th>
+        </tr>
+        <tr>
+            <td>おはようございます</td>
+            <td>Ohayou gozaimasu</td>
+            <td>Selamat pagi</td>
+        </tr>
+        <tr>
+            <td>こんにちは</td>
+            <td>Konnichiwa</td>
+            <td>Selamat siang</td>
+        </tr>
+        <tr>
+            <td>こんばんは</td>
+            <td>Konbanwa</td>
+            <td>Selamat malam</td>
+        </tr>
+        <tr>
+            <td>おやすみなさい</td>
+            <td>Oyasuminasai</td>
+            <td>Selamat tidur</td>
+        </tr>
+        <tr>
+            <td>ありがとうございます</td>
+            <td>Arigatou gozaimasu</td>
+            <td>Terima kasih</td>
+        </tr>
+        <tr>
+            <td>すみません</td>
+            <td>Sumimasen</td>
+            <td>Permisi / Maaf</td>
+        </tr>
+        <tr>
+            <td>ごめんなさい</td>
+            <td>Gomen nasai</td>
+            <td>Maaf</td>
+        </tr>
+        <tr>
+            <td>いってきます</td>
+            <td>Ittekimasu</td>
+            <td>Saya pergi (akan kembali)</td>
+        </tr>
+        <tr>
+            <td>いってらっしゃい</td>
+            <td>Itterasshai</td>
+            <td>Hati-hati di jalan</td>
+        </tr>
+        <tr>
+            <td>ただいま</td>
+            <td>Tadaima</td>
+            <td>Saya pulang</td>
+        </tr>
+        <tr>
+            <td>おかえりなさい</td>
+            <td>Okaerinasai</td>
+            <td>Selamat datang kembali</td>
+        </tr>
+        <tr>
+            <td>いただきます</td>
+            <td>Itadakimasu</td>
+            <td>Selamat makan</td>
+        </tr>
+        <tr>
+            <td>ごちそうさまでした</td>
+            <td>Gochisousama deshita</td>
+            <td>Terima kasih atas makanannya</td>
+        </tr>
+        <tr>
+            <td>よろしくお願いします</td>
+            <td>Yoroshiku onegaishimasu</td>
+            <td>Mohon bantuannya</td>
+        </tr>
+        <tr>
+            <td>おめでとうございます</td>
+            <td>Omedetou gozaimasu</td>
+            <td>Selamat (untuk ucapan)</td>
+        </tr>
+        <tr>
+            <td>さようなら</td>
+            <td>Sayounara</td>
+            <td>Selamat tinggal</td>
+        </tr>
+    </table>
+    <div class="feedback-container">
+        <div class="button">
+            <h2 onclick="toggleFormVisibility()">Feedback</h2>
+        </div>
+        <form action="/submit-feedback" method="POST" name="submit-to-google-sheet">
+            <div class="form-group">
+                <label for="username">name:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="feedback">Feedback:</label>
+                <textarea type="text" id="feedback" name="feedback"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+            <div id="notification" class="notification">Feedback telah terkirim!</div>
+        </form>
+    </div>
+    <footer class="footer">
+        <h4>Contact Us</h4>
+        <div class="contact-icons">
+            <a href="https://www.instagram.com/mzii_02" target="_blank" class="icon">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+            </a>
+            <a href="muhammadfahrurozi148@gmail.com" class="icon">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail">
+            </a>
+            <a href="https://fahrurozi23.github.io/myprofile/profil" target="_blank" class="icon">
+                <img src="image/avatar.png" alt="MyProfile" style="background-color: #f5f5f5; border-radius: 10px;">
+            </a>
+        </div>
+        <p>&copy; 2024 JTranslate. All rights reserved.</p>
+    </footer>
+    <script src="JavaScript/language.js"></script>
+    <script src="JavaScript/main.js"></script>    
+</body>
+
+</html>

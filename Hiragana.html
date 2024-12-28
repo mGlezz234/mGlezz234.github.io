@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=p, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="image/Logo1.png" type="png">
+  <title>JTranslate</title>
+  <link rel="stylesheet" href="CSS/Hiragana.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <header class="header" id="header">
+    <div class="header-space">
+        <img src="image/Logo.png" alt="" width="50px">
+        <h2>JTranslate</h2>
+    </div>
+    <div class="span">
+        <div>
+            <span style="float: right;">
+                <a onclick="toggleDarkMode()">
+                    <i id="theme-icon" class="bx bx-sun" style="font-size: 30px;"></i>
+                </a>
+            </span>
+        </div>
+        <div class="menu-header" onclick="toggleSidebar()">
+            <span class="bx bx-menu" style="font-size: 30px;"></span>
+        </div>
+    </div>
+</header>
+  
+  <div class="sidebar" id="sidebar">
+      <ul class="menu-list">
+          <li><a onclick="closeSidebar()"><i class="bx bx-x"></i> close</a></li>
+          <li><a href="index.html" onclick="closeSidebar()"><i class="bx bx-home"></i> Home</a></li>
+          <li><a href="Hiragana.html" onclick="closeSidebar()"><i class="bx bx-book"></i> Hiragana</a></li>
+          <li><a href="Katakana.html" onclick="closeSidebar()"><i class="bx bx-book"></i> Katakana</a></li>
+          <li><a href="Kanji320.html" onclick="closeSidebar()"><i class="bx bx-book"></i> Kanji320</a></li>
+          <li><a href="Minna1.html" onclick="closeSidebar()"><i class="bx bx-book"></i> Minna 1</a></li>
+      </ul>
+  </div>
+    <main class="konten">
+      <div class="dropdown">
+        <h2 onclick="toggleContent(this)">↓ Hiragana Dasar</h2>
+        <div class="dropdown-content">
+          <p>
+            Hiragana terdiri dari 46 karakter dasar yang meliputi vokal (あ, い, う, え, お),
+            konsonan dengan vokal (か, き, く, け, こ, dst.), dan bunyi khusus seperti ん (n). Contoh:
+          </p>
+          <div class="Hiragana">
+            <h2>HIRAGANA</h2>
+            <table>
+              <tr>
+                <td>あ<p>a</p>
+                </td>
+                <td>い<p>i</p>
+                </td>
+                <td>う<p>u</p>
+                </td>
+                <td>え<p>e</p>
+                </td>
+                <td>お<p>o</p>
+                </td>
+              </tr>
+              <tr>
+                <td>か<p>ka</p>
+                </td>
+                <td>き<p>ki</p>
+                </td>
+                <td>く<p>ku</p>
+                </td>
+                <td>け<p>ke</p>
+                </td>
+                <td>こ<p>ko</p>
+                </td>
+              </tr>
+              <tr>
+                <td>さ<p>sa</p>
+                </td>
+                <td>し<p>shi</p>
+                </td>
+                <td>す<p>su</p>
+                </td>
+                <td>せ<p>se</p>
+                </td>
+                <td>そ<p>so</p>
+                </td>
+              </tr>
+              <tr>
+                <td>た<p>ta</p>
+                </td>
+                <td>ち<p>chi</p>
+                </td>
+                <td>つ<p>tsu</p>
+                </td>
+                <td>て<p>te</p>
+                </td>
+                <td>と<p>to</p>
+                </td>
+              </tr>
+              <tr>
+                <td>な<p>na</p>
+                </td>
+                <td>に<p>ni</p>
+                </td>
+                <td>ぬ<p>nu</p>
+                </td>
+                <td>ね<p>ne</p>
+                </td>
+                <td>の<p>no</p>
+                </td>
+              </tr>
+              <tr>
+                <td>は<p>ha</p>
+                </td>
+                <td>ひ<p>hi</p>
+                </td>
+                <td>ふ<p>fu</p>
+                </td>
+                <td>へ<p>he</p>
+                </td>
+                <td>ほ<p>ho</p>
+                </td>
+              </tr>
+              <tr>
+                <td>ま<p>ma</p>
+                </td>
+                <td>み<p>mi</p>
+                </td>
+                <td>む<p>mu</p>
+                </td>
+                <td>め<p>me</p>
+                </td>
+                <td>も<p>mo</p>
+                </td>
+              </tr>
+              <tr>
+                <td>や<p>ya</p>
+                </td>
+                <td></td>
+                <td>ゆ<p>yu</p>
+                </td>
+                <td></td>
+                <td>よ<p>yo</p>
+                </td>
+              </tr>
+              <tr>
+                <td>ら<p>ra</p>
+                </td>
+                <td>り<p>ri</p>
+                </td>
+                <td>る<p>ru</p>
+                </td>
+                <td>れ<p>re</p>
+                </td>
+                <td>ろ<p>ro</p>
+                </td>
+              </tr>
+              <tr>
+                <td>わ<p>wa</p>
+                </td>
+                <td></td>
+                <td>ん<p>n</p>
+                </td>
+                <td></td>
+                <td>を<p>wo</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <h2 onclick="toggleContent(this)">↓ Tenten (゛)</h2>
+        <div class="dropdown-content">
+          <p>
+            Tenten (゛) adalah tanda yang ditambahkan ke huruf hiragana untuk mengubah bunyinya.
+            Biasanya, tanda ini mengubah bunyi konsonan:
+          </p>
+          <div class="Hiragana">
+            <h2>HIRAGANA TENTEN (゛)</h2>
+            <table>
+              <tr>
+                <td>が<p>ga</p>
+                </td>
+                <td>ぎ<p>gi</p>
+                </td>
+                <td>ぐ<p>gu</p>
+                </td>
+                <td>げ<p>ge</p>
+                </td>
+                <td>ご<p>go</p>
+                </td>
+              </tr>
+              <tr>
+                <td>ざ<p>za</p>
+                </td>
+                <td>じ<p>ji</p>
+                </td>
+                <td>ず<p>zu</p>
+                </td>
+                <td>ぜ<p>ze</p>
+                </td>
+                <td>ぞ<p>zo</p>
+                </td>
+              </tr>
+              <tr>
+                <td>だ<p>da</p>
+                </td>
+                <td>ぢ<p>ji</p>
+                </td>
+                <td>づ<p>zu</p>
+                </td>
+                <td>で<p>de</p>
+                </td>
+                <td>ど<p>do</p>
+                </td>
+              </tr>
+              <tr>
+                <td>ば<p>ba</p>
+                </td>
+                <td>び<p>bi</p>
+                </td>
+                <td>ぶ<p>bu</p>
+                </td>
+                <td>べ<p>be</p>
+                </td>
+                <td>ぼ<p>bo</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <h2 onclick="toggleContent(this)">↓ Maru (゜)</h2>
+        <div class="dropdown-content">
+          <p>
+            Maru (゜) adalah tanda bulat kecil yang digunakan untuk mengubah bunyi huruf hiragana
+            dari kelompok h menjadi bunyi p.
+          </p>
+          <div class="Hiragana">
+            <h2>HIRAGANA MARU (゜)</h2>
+            <table>
+              <tr>
+                <td>ぱ<p>pa</p>
+                </td>
+                <td>ぴ<p>pi</p>
+                </td>
+                <td>ぷ<p>pu</p>
+                </td>
+                <td>ぺ<p>pe</p>
+                </td>
+                <td>ぽ<p>po</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <h2 onclick="toggleContent(this)">↓ + Huruf Semi-Konsonan</h2>
+        <div class="dropdown-content">
+          <p>
+            Huruf semi-konsonan dihasilkan dari hiragana dasar dengan huruf kecil
+            seperti や (ya), ゆ (yu), よ (yo). Kombinasi ini membentuk bunyi gabungan:
+          </p>
+          <div class="Hiragana">
+            <h2>HIRAGANA + HURUF KECIL</h2>
+            <table>
+              <tr>
+                <td>きゃ<p>kya</p>
+                </td>
+                <td>きゅ<p>kyu</p>
+                </td>
+                <td>きょ<p>kyo</p>
+                </td>
+              </tr>
+              <tr>
+                <td>しゃ<p>sha</p>
+                </td>
+                <td>しゅ<p>shu</p>
+                </td>
+                <td>しょ<p>sho</p>
+                </td>
+              </tr>
+              <tr>
+                <td>ちゃ<p>cha</p>
+                </td>
+                <td>ちゅ<p>chu</p>
+                </td>
+                <td>ちょ<p>cho</p>
+                </td>
+              </tr>
+              <tr>
+                <td>にゃ<p>nya</p>
+                </td>
+                <td>にゅ<p>nyu</p>
+                </td>
+                <td>にょ<p>nyo</p>
+                </td>
+              </tr>
+              <tr>
+                <td>ひゃ<p>hya</p>
+                </td>
+                <td>ひゅ<p>hyu</p>
+                </td>
+                <td>ひょ<p>hyo</p>
+                </td>
+              </tr>
+              <tr>
+                <td>みゃ<p>mya</p>
+                </td>
+                <td>みゅ<p>myu</p>
+                </td>
+                <td>みょ<p>myo</p>
+                </td>
+              </tr>
+              <tr>
+                <td>りゃ<p>rya</p>
+                </td>
+                <td>りゅ<p>ryu</p>
+                </td>
+                <td>りょ<p>ryo</p>
+                </td>
+              </tr>
+              <tr>
+                <td>ぎゃ<p>gya</p>
+                </td>
+                <td>ぎゅ<p>gyu</p>
+                </td>
+                <td>ぎょ<p>gyo</p>
+                </td>
+              </tr>
+              <tr>
+                <td>じゃ<p>ja</p>
+                </td>
+                <td>じゅ<p>ju</p>
+                </td>
+                <td>じょ<p>jo</p>
+                </td>
+              </tr>
+              <tr>
+                <td>びゃ<p>bya</p>
+                </td>
+                <td>びゅ<p>byu</p>
+                </td>
+                <td>びょ<p>byo</p>
+                </td>
+              </tr>
+              <tr>
+                <td>ぴゃ<p>pya</p>
+                </td>
+                <td>ぴゅ<p>pyu</p>
+                </td>
+                <td>ぴょ<p>pyo</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    <footer class="footer">
+      <p>&copy; 2024 JTranslate. All rights reserved.</p>
+    </footer>
+    </main>
+    <script src="JavaScript/language.js"></script>
+    <script src="JavaScript/main.js"></script>
+  </body>
+
+</html>
