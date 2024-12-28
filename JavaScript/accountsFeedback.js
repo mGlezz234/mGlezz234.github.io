@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         setTimeout(() => {
             alertBox.style.display = 'none';
-        }, 0);
+        }, 3000);
     };
 
     form.addEventListener('submit', e => {
